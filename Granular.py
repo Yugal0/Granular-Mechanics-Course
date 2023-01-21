@@ -4,7 +4,7 @@ import numpy as np
 from scipy.stats import norm
 from scipy.integrate import trapezoid
 import math
-df = pd.read_excel("C:/Users/admin/hello/coordinates.xls",sheet_name="fd")
+df = pd.read_excel("C:/Users/admin/hello/coordinates.xls",sheet_name="fd")   #have to make this file available online 
 D=df['D']
 f=df['f']  #least f
 dt = np.repeat(D,f*10000)  #ungrouped data of all the particles (assuming )
